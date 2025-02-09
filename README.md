@@ -83,12 +83,8 @@ Please make sure to update tests as appropriate.
 
 ---
 
-## 📜 License  
+## 🤖 Authors
 
-MIT License  
+- [@Gavish](https://github.com/gavish47)
+- [@Akshit tripathi](https://github.com/AKSHIT-TRIPATHI)
 
-Copyright (c) 2025 Gavish  
-
-Permission is granted to use, copy, modify, and distribute this software for any purpose, with or without fee, provided the above notice is included.  
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.  
