@@ -18,12 +18,13 @@ document.addEventListener("DOMContentLoaded", function() {
             stress: parseInt(stress)
         };
 
-        try {
-            const response = await fetch("https://3e17-2409-40d1-101b-7d43-c176-259c-1daf-ba54.ngrok-free.app/predict", {
+         try {
+            const response = await fetch("https://ffc3-2409-40d1-101b-7d43-c176-259c-1daf-ba54.ngrok-free.app/predict", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(requestData)
             });
+
             const data = await response.json();
             
             if (data.prediction !== undefined) {
