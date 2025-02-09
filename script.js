@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         };
 
         try {
-            const response = await fetch("http://localhost:8000/predict", {
+            const response = await fetch(" https://c34f-2409-40d1-101b-7d43-c176-259c-1daf-ba54.ngrok-free.app", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(requestData)
