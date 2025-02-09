@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Risk Predictor</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #070707, #622b9c);
+            color: #f73232;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: rgb(50, 11, 59);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(89, 187, 24, 0.2);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #f73232;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            background: #9a46f4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #feb47b;
+        }
+
+        /* Result Box */
+        .result-box {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .result-box h2 {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        #resultText {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ff7e5f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Heart Attack Risk Predictor</h1>
+        </header>
+        <form id="predictionForm">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" min="18" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="chest_pain">Chest Pain Level:</label>
+                <select id="chest_pain" required>
+                    <option value="1">None</option>
+                    <option value="2">Mild</option>
+                    <option value="3">Moderate</option>
+                    <option value="4">Severe</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="smoking">Smoking Level:</label>
+                <select id="smoking" required>
+                    <option value="1">Never</option>
+                    <option value="2">Occasional</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Heavy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="drinking">Drinking Level:</label>
+                <select id="drinking" required>
+                    <option value="1">Never</option>
+                    <option value="2">Occasional</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Heavy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="stress">Stress Level:</label>
+                <select id="stress" required>
+                    <option value="1">Low</option>
+                    <option value="2">Medium</option>
+                    <option value="3">High</option>
+                    <option value="4">Very High</option>
+                </select>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+        <div class="result-box">
+            <h2>Prediction Result:</h2>
+            <p id="resultText">-</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
