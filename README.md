@@ -52,6 +52,28 @@ install.packages("caret")
 
 
 
+
+
+## 📷 ScreenShoots
+
+
+
+
+
+https://github.com/user-attachments/assets/a7bde1b1-6a1e-4eb2-b3f8-9842c2ad2fcd
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 🤝 Contributing  
 
 Pull requests are welcome. For major changes, please open an issue first  
