@@ -26,12 +26,12 @@ This project predicts the **risk level of a heart attack** based on user inputs 
 │── 📁 frontend/  
 │   ├── index.html        # Main UI  
 │   ├── script.js         # Fetches prediction from API  
-│ 
+│   ├── style.css         # Styling (if applicable)  
 │── 📁 backend/  
 │   ├── api.r             # Plumber API to serve model  
 │   ├── model_training.r  # Training script for ML model  
 │   ├── heart_attack_model.rds  # Saved Random Forest model  
-
+│── README.md             # This file  
 ```
 
 ---
@@ -80,7 +80,7 @@ This project is licensed under the **MIT License**.
 
 ---
 
-🎉 **Made with ❤️ by [Your Name]**  
+🎉 **Made with ❤️ by GAVISH**  
 ```
 
 ---
